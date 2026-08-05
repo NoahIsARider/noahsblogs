@@ -1,44 +1,44 @@
 # DESIGN
 
-## 气质与意象
+## Mood And Imagery
 
-这是一个安静的个人写作站，不追求冷硬的终端感，而是要像一册被长期翻阅的研究手记。
+This is a quiet personal writing site. It should feel less like a hard terminal and more like a notebook that has been read, revised, and kept close over time.
 
-整体气质应当：
+The overall mood should be:
 
-- 温和
-- 克制
-- 可久读
-- 带一点手写与纸面感
+- warm
+- restrained
+- readable for long sessions
+- lightly handwritten without turning decorative
 
-## 视觉策略
+## Visual Strategy
 
-- 保留原主题的极简骨架，不引入花哨装饰
-- 用字体气质而不是颜色堆砌来完成风格转换
-- 正文优先阅读舒适度，导航与代码再承担结构感
-- 中英文必须统一在同一气场里，避免英文一套、中文一套导致割裂
+- keep the original minimalist structure without adding ornamental noise
+- shift the atmosphere through typography rather than through color tricks
+- let body copy carry comfort while navigation and code keep structural clarity
+- keep Chinese and English capable of living in the same system without visual fracture
 
-## 配色方案
+## Color Palette
 
-- 继续使用低饱和黑白灰体系
-- 不通过暖黄背景强行制造“文艺感”
-- 温度主要来自字形与节奏，而不是大面积染色
+- stay inside a low-saturation black, white, and gray range
+- do not fake warmth with a large yellowed-paper background
+- let the sense of warmth come from type shape and rhythm
 
-## 字体排版
+## Typography
 
-- 正文与标题采用温暖、圆润、略带手写感的中英兼容字体
-- 代码、日期、技术性信息保留等宽字体，维持信息辨识度
-- 行高略宽，字距轻微放松，减少中文长文阅读疲劳
+- use a warm, rounded, lightly handwritten type system for reading and headings
+- keep code, dates, and technical metadata in a clear monospace family
+- allow a slightly roomier line height and a softer rhythm for long-form reading
 
-## 布局与交互
+## Layout And Interaction
 
-- 保持单栏写作结构
-- 首页、目录页和文章页都以内容为先
-- 不用额外动画去“表现设计感”，由排版本身承担氛围
+- keep the single-column writing structure
+- let the home page, list pages, and article pages remain content-first
+- avoid extra motion used only to signal style; the page should feel designed through composition
 
-## 设计禁忌
+## Design Taboos
 
-- 不要回到生硬的系统 `monospace` 全站方案
-- 不要使用过于幼态、卡通化的手写体
-- 不要让中文正文出现过细、过飘或发虚的问题
-- 不要让英文标题和中文正文像来自两个不同网站
+- do not fall back to a harsh site-wide `monospace` treatment
+- do not use childish or overly decorative script fonts
+- do not let the reading text become thin, floating, or blurry
+- do not let the English and Chinese portions feel like two unrelated websites

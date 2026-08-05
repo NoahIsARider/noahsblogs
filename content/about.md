@@ -5,8 +5,8 @@ showreadingtime = false
 toc = false
 +++
 
-这是一个以写作为中心的个人站点。
+A writing-first personal site.
 
-内容会围绕研究、技术、博客和日常积累展开，尽量保持克制、清晰和可回看。
+Most of the work here circles around research, engineering, blogging, and the kind of notes worth keeping.
 
-如果你想快速浏览更新，请直接前往 [Posts](/posts/)。
+If you want the quickest way in, start with [Posts](/posts/).

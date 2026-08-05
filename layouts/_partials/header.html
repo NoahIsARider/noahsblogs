@@ -1,8 +1,22 @@
-<nav class="path-nav" aria-label="Breadcrumb">
-  <ol>
-    {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
-  </ol>
-</nav>
+<div class="site-topbar">
+  <nav class="path-nav" aria-label="Breadcrumb">
+    <ol>
+      {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+    </ol>
+  </nav>
+
+  <div class="site-actions" aria-label="Site actions">
+    {{ with site.Params.githubURL }}
+      <a
+        class="site-action-link"
+        href="{{ . }}"
+        target="_blank"
+        rel="noreferrer"
+      >NoahIsARider</a>
+    {{ end }}
+    <button type="button" class="theme-toggle" data-theme-toggle>Light</button>
+  </div>
+</div>
 
 {{ define "breadcrumbnav" }}
   {{ if .p1.Parent }}

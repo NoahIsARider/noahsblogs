@@ -5,6 +5,20 @@
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lxgw-wenkai-screen-web/1.520.0/style.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script>
+  (function () {
+    var savedTheme = null;
+    try {
+      savedTheme = localStorage.getItem("theme");
+    } catch (error) {
+      savedTheme = null;
+    }
+
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var theme = savedTheme === "light" || savedTheme === "dark" ? savedTheme : (prefersDark ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
 <title>
   {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
   site.Title }}{{ end }}
@@ -64,5 +78,37 @@ Articles */}} {{ if .IsPage }}
     {{- end }}
   }
 </script>
-{{ end }} {{ partialCached "head/favicon.html" . }} {{ partialCached
+{{ end }}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var root = document.documentElement;
+    var button = document.querySelector("[data-theme-toggle]");
+
+    if (!button) {
+      return;
+    }
+
+    function updateButton() {
+      var theme = root.getAttribute("data-theme") || "light";
+      var nextTheme = theme === "dark" ? "light" : "dark";
+      button.textContent = theme === "dark" ? "Dark" : "Light";
+      button.setAttribute("aria-label", "Switch to " + nextTheme + " mode");
+      button.setAttribute("title", "Switch to " + nextTheme + " mode");
+    }
+
+    button.addEventListener("click", function () {
+      var currentTheme = root.getAttribute("data-theme") || "light";
+      var nextTheme = currentTheme === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", nextTheme);
+      try {
+        localStorage.setItem("theme", nextTheme);
+      } catch (error) {
+      }
+      updateButton();
+    });
+
+    updateButton();
+  });
+</script>
+{{ partialCached "head/favicon.html" . }} {{ partialCached
 "head/css.html" . }}

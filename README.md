@@ -1,35 +1,35 @@
 # Shibui Blogs
 
-这是一个已经整理成“个人站点仓库”的 Hugo 静态博客项目。
+This is a Hugo static blog project already cleaned up into a proper personal site repository.
 
-它保留了原本极简、终端感、单色系的视觉风格，但站点内容、配置和部署入口都已经切换到仓库根目录，更适合长期写作和维护。
+It keeps the minimalist, terminal-adjacent, monochrome feel of the original theme, while moving content, configuration, and deployment entry points to the repository root for easier long-term writing and maintenance.
 
-## 目录结构
+## Structure
 
 ```text
 .
-├── archetypes/          # 新文章模板
-├── assets/css/          # 主题样式与自定义覆盖
-├── content/             # 站点内容
+├── archetypes/          # New post templates
+├── assets/css/          # Theme styles and custom overrides
+├── content/             # Site content
 │   ├── _index.md
 │   ├── about.md
 │   └── posts/
-├── layouts/             # Hugo 模板
-├── static/              # 静态资源
-├── .github/workflows/   # GitHub Pages 部署
-├── hugo.toml            # 站点主配置
-└── vercel.json          # Vercel 构建配置
+├── layouts/             # Hugo templates
+├── static/              # Static assets
+├── .github/workflows/   # GitHub Pages deployment
+├── hugo.toml            # Main site configuration
+└── vercel.json          # Vercel build configuration
 ```
 
-## 写作方式
+## Writing
 
-新增文章时，直接在根目录运行：
+To add a new post, run this at the repository root:
 
 ```bash
 hugo new posts/my-new-post.md
 ```
 
-生成的文章会使用 [archetypes/default.md](./archetypes/default.md) 作为模板，默认包含：
+New posts use [archetypes/default.md](./archetypes/default.md) as the default template, including:
 
 - `title`
 - `date`
@@ -39,58 +39,58 @@ hugo new posts/my-new-post.md
 - `toc`
 - `showreadingtime`
 
-文章正文放在 `content/posts/` 下即可。
+Place the actual article content under `content/posts/`.
 
-## 本地预览
+## Local Preview
 
-如果本机装了 Hugo：
+If Hugo is installed locally:
 
 ```bash
 hugo server -D
 ```
 
-`-D` 会把草稿文章也一起显示出来。
+The `-D` flag includes draft posts.
 
-## 部署
+## Deployment
 
 ### GitHub Pages
 
-仓库已经包含 GitHub Actions 工作流 [`.github/workflows/gh-page.yml`](./.github/workflows/gh-page.yml)。
+The repository already includes the GitHub Actions workflow [`.github/workflows/gh-page.yml`](./.github/workflows/gh-page.yml).
 
-- 推送到 `main` 或 `master` 会自动构建并部署
-- 构建输出目录为 `public/`
+- Pushing to `main` or `master` triggers build and deployment automatically
+- The build output directory is `public/`
 
-建议在仓库设置中启用：
+Recommended repository setting:
 
 - `Settings -> Pages -> Build and deployment -> Source: GitHub Actions`
 
 ### Vercel
 
-仓库已经包含 [vercel.json](./vercel.json)：
+The repository also includes [vercel.json](./vercel.json):
 
-- 构建命令：`hugo --gc --minify`
-- 输出目录：`public`
+- Build command: `hugo --gc --minify`
+- Output directory: `public`
 
-导入到 Vercel 后，通常无需额外改动；如果平台要求指定 Hugo 版本，再在 Vercel 项目环境变量里补充 `HUGO_VERSION` 即可。
+Once imported into Vercel, it should usually work without extra configuration. If the platform asks for an explicit Hugo version, add `HUGO_VERSION` in the project environment variables.
 
-## 站点配置
+## Site Configuration
 
-主配置文件是 [hugo.toml](./hugo.toml)。常改的项目包括：
+The main configuration file is [hugo.toml](./hugo.toml). Common edits include:
 
 - `baseURL`
 - `title`
 - `params.author.name`
 - `params.description`
 - `params.footerText`
-- 菜单 `menu.main`
+- menu `menu.main`
 
-## 风格说明
+## Style Notes
 
-当前站点风格强调：
+The current site direction emphasizes:
 
-- 极简
-- 高可读性
-- 黑白单色
-- 偏终端 / 文档索引感
+- minimalism
+- strong readability
+- monochrome structure
+- a terminal or document-index undertone
 
-如果要继续微调视觉，优先修改 [assets/css/custom.css](./assets/css/custom.css)。
+If you want to keep refining the visuals, start with [assets/css/custom.css](./assets/css/custom.css).

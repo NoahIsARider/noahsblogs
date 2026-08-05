@@ -1,16 +1,16 @@
 +++
-title = '站点初始化'
+title = 'Site Setup'
 date = 2026-08-05T22:40:00+08:00
 draft = false
-description = '这是一篇用于确认博客结构和部署链路的初始化文章。'
+description = 'A short post used to verify the blog structure and deployment flow.'
 tags = ['meta', 'hugo']
 +++
 
-这篇文章用来确认站点已经具备长期写作的基本能力：
+This post exists to confirm that the site is ready for long-term writing:
 
-1. 内容放在仓库根目录维护；
-2. 可以直接用 Hugo 构建静态页面；
-3. 同时兼容 GitHub Pages 与 Vercel 部署；
-4. 后续新增文章只需要在 `content/posts/` 下写 Markdown。
+1. content lives in the repository root;
+2. the site builds directly with Hugo;
+3. deployment works for both GitHub Pages and Vercel;
+4. new posts only need Markdown files under `content/posts/`.
 
-如果你看到这篇文章，说明这套博客骨架已经开始工作了。
+If you can read this, the blog skeleton is already doing its job.
