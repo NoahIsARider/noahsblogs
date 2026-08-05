@@ -1,5 +1,18 @@
 /* Site-level tuning for writing-heavy usage */
 :root {
+  --font-family-body:
+    "LXGW WenKai Screen", "LXGW WenKai GB Screen R", "LXGW WenKai",
+    "STKaiti", "KaiTi", "Kaiti SC", ui-rounded, "SF Pro Rounded",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", system-ui,
+    sans-serif;
+  --font-family-display:
+    "LXGW WenKai Screen", "LXGW WenKai GB Screen R", "LXGW WenKai",
+    "STKaiti", "KaiTi", "Kaiti SC", ui-rounded, "SF Pro Rounded",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", system-ui,
+    sans-serif;
+  --font-family-meta:
+    "Cascadia Mono", "Sarasa Mono SC", "JetBrains Mono", "SFMono-Regular",
+    Consolas, ui-monospace, monospace;
   --font-size-base: 0.98rem;
   --font-size-small: 0.82rem;
   --font-size-code: 0.9rem;
@@ -8,15 +21,66 @@
 }
 
 body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  line-height: var(--spacing-base);
   letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
+  font-family: var(--font-family-display);
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 h2 {
+  font-family: var(--font-family-display);
   font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+.terminal-nav,
+.path-nav,
+header,
+footer {
+  font-family: var(--font-family-display);
+}
+
+time,
+.time-list__date,
+.archive-item time,
+.reading-time,
+.lastmod,
+pre,
+code,
+p > code,
+li > code,
+h1 > code,
+h2 > code,
+h3 > code,
+h4 > code,
+h5 > code {
+  font-family: var(--font-family-meta);
+}
+
+p,
+li,
+blockquote {
+  font-weight: 430;
+}
+
+blockquote {
+  font-style: normal;
+}
+
+.terminal-nav nav ul {
+  gap: 1.25em;
 }
 
 .time-list__title a {
