@@ -1,5 +1,20 @@
 {{ define "main" }}
   {{ .Content }}
+  {{ $pages := where site.RegularPages "Section" "in" (site.Params.mainSections | default (slice "posts")) }}
+  {{ $recent := first 5 (sort $pages "Date" "desc") }}
+  {{ if gt (len $recent) 0 }}
+    <h1 class="manual-number">Recent posts</h1>
+    <table class="time-list">
+      <tbody>
+        {{ range $recent }}
+          <tr>
+            <td class="time-list__date">{{- partial "date" .Date -}}</td>
+            <td class="time-list__title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  {{ end }}
   <div class="terminal-nav">
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
   </div>
