@@ -1,5 +1,5 @@
 +++
-title = 'Site Setup'
+title = 'So Now We Are Making Rock Music.md'
 date = 2026-08-05T23:15:00+08:00
 draft = false
 description = 'A short post used to tell why I started writing blogs'
