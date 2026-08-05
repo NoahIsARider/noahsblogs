@@ -15,7 +15,7 @@ summaryLength = 120
   category = 'categories'
 
 [permalinks]
-  posts = '/posts/:slugorfilename/'
+  posts = '/posts/:slugorcontentbasename/'
 
 [params]
   description = '一个适合长期维护的极简个人博客，用来记录研究、技术与日常思考。'
