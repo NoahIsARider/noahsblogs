@@ -1,11 +1,15 @@
 /* Site-level tuning for writing-heavy usage */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Patrick+Hand&display=swap');
+
 :root {
   --font-family-body:
+    "Patrick Hand", "Caveat",
     "LXGW WenKai Screen", "LXGW WenKai GB Screen R", "LXGW WenKai",
     "STKaiti", "KaiTi", "Kaiti SC", ui-rounded, "SF Pro Rounded",
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", system-ui,
     sans-serif;
   --font-family-display:
+    "Caveat", "Patrick Hand",
     "LXGW WenKai Screen", "LXGW WenKai GB Screen R", "LXGW WenKai",
     "STKaiti", "KaiTi", "Kaiti SC", ui-rounded, "SF Pro Rounded",
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", system-ui,
@@ -13,10 +17,10 @@
   --font-family-meta:
     "Cascadia Mono", "Sarasa Mono SC", "JetBrains Mono", "SFMono-Regular",
     Consolas, ui-monospace, monospace;
-  --font-size-base: 0.98rem;
-  --font-size-small: 0.82rem;
+  --font-size-base: 1.05rem;
+  --font-size-small: 0.86rem;
   --font-size-code: 0.9rem;
-  --spacing-base: 1.75rem;
+  --spacing-base: 1.85rem;
   --container-width: 72ch;
 }
 
