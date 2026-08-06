@@ -20,7 +20,7 @@ Furthermore, we use the **p-value** to evaluate the robustness of our conclusion
 
 The general logic behind most statistical tests can be summarized by this formula:
 
-$$\text{Statistical Test Statistic} = \frac{\text{Observed Difference} - \text{Expected Value under Null Hypothesis}}{\text{Measure of Variation (Standard Error)}}$$
+$\text{Statistical Test Statistic} = \frac{\text{Observed Difference} - \text{Expected Value under Null Hypothesis}}{\text{Measure of Variation (Standard Error)}}$
 
 {{< youtube QZ7kgmhdIwA >}}
 
