@@ -39,7 +39,7 @@ summaryLength = 120
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['$$', '$$'], ['\\[', '\\]']]
-          inline = [['$', '$'], ['\\(', '\\)']]
+          inline = [['\\(', '\\)']]
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
