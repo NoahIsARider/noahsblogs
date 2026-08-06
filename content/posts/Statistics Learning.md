@@ -2,7 +2,7 @@
 title = 'Statistics Learning'
 date = 2026-08-06T10:38:00+08:00
 draft = false
-description = 'A blog about what I've learned in statistics crash course'
+description = "A blog about what I've learned in statistics crash course"
 tags = ['statistics']
 +++
 
