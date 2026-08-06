@@ -1,7 +1,7 @@
 +++
 title = 'Thoughts after drinks'
 date = 2026-08-06T23:03:00+08:00
-draft = False
+draft = false
 description = "A reflection on the essays I've read across June and August."
 tags = ['AI', 'Review']
 +++
