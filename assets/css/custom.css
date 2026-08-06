@@ -208,3 +208,37 @@ blockquote {
 .toc-content a:hover::after {
   width: 100%;
 }
+
+/* Math layout tuning */
+.katex-display {
+  display: block;
+  max-width: 100%;
+  margin: calc(var(--spacing-base) * 0.85) 0;
+  padding: 0.15rem 0 0.35rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.katex-display > .katex {
+  display: inline-block;
+  min-width: max-content;
+  max-width: none;
+  font-size: 0.92em;
+}
+
+.katex-display::-webkit-scrollbar {
+  height: 6px;
+}
+
+.katex-display::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 999px;
+}
+
+@media (max-width: 760px) {
+  .katex-display > .katex {
+    font-size: 0.84em;
+  }
+}
