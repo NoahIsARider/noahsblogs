@@ -12,8 +12,6 @@ Here is a summary of what I’ve learned so far:
 
 Naturally, with a large dataset, data tend to follow a **normal distribution**. However, when working with a small sample size, the data are considered more volatile and are better modeled by the **t-distribution** (often referred to in the context of Student's t-test), rather than the z-distribution.
 
-{{< youtube rBjft49MAO8 >}}
-
 {{< youtube uAxyI_XfqXk >}}
 
 Once we model the distribution of our data, we can calculate the **confidence interval**. This represents the range in which we expect the true population parameter (such as the mean) to lie; for instance, with a 95% confidence interval, we can say that if we repeated an experiment 100 times, the true mean would fall within that interval 95 times.
