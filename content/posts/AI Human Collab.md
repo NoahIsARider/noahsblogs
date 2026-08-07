@@ -1,5 +1,5 @@
 +++
-title = 'Can't AI Just Rule This World Already'
+title = "Can't AI Just Rule This World Already"
 date = 2026-08-07T14:58:00+08:00
 draft = false
 description = "A blog about AI agency and more"
