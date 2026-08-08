@@ -1,5 +1,5 @@
 +++
-title = "Can't AI Just Rule This World Already"
+title = "My Artpop Could Mean Anything"
 date = 2026-08-08T23:37:00+08:00
 draft = false
 description = "A blog about AI art generation"
