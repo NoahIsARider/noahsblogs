@@ -8,7 +8,7 @@ tags = ['AI','Art']
 
 Rule 1: Don't be afraid to use many descriptions in the prompt. A picture can be Retro-Futurism, Western, Minimalism, Abstract at the same time if that is what you are looking for.
 
-Rule 2: Tell the AI what is purpose of the pic so that it understands the vibe that you are looking for.
+Rule 2: Tell the AI what is the purpose of the pic so that it understands the vibe that you are looking for.
 
 Here are my outcomes today:
 
