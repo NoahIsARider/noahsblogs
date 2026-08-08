@@ -10,7 +10,7 @@ Rule 1: Don't be afraid to use many descriptions in the prompt. A picture can be
 
 Rule 2: Tell the AI what is purpose of the pic so that it understands the vibe that you are looking for.
 
-Here are my outcome today:
+Here are my outcomes today:
 
 ![Copper Star and Red Rock Canyon – Dusk, 1888](/images/retro_western_bg_1786200337572.jpg)
 
