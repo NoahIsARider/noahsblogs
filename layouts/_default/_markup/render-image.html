@@ -1,4 +1,14 @@
-{{- $alt := .Text -}} {{- $src := .Destination -}} {{- $title := .Title -}}
+{{- $alt := .Text -}}
+{{- $title := .Title -}}
+{{- $src := .Destination -}}
+{{- /* normalize Windows-style backslashes */ -}}
+{{- $src = replaceRE `\\` "/" $src -}}
+{{- /* leave absolute external URLs untouched */ -}}
+{{- if not (urls.Parse $src).Scheme -}}
+  {{- /* strip leading slash so relURL prefixes the site base path (/noahsblogs/) */ -}}
+  {{- $src = strings.TrimPrefix "/" $src -}}
+  {{- $src = relURL $src -}}
+{{- end -}}
 
 <figure>
   <img
